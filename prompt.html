@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedido para a IA · Jader Zerbini</title>
+<meta name="description" content="O pedido pronto para gerar o seu primeiro portfólio numa IA gratuita: copie ou baixe em .txt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fundo" aria-hidden="true"><img src="videos/fundo.jpg" alt=""></div>
+<div class="scan" aria-hidden="true"></div>
+
+<main class="guia">
+<section>
+  <div class="conteudo">
+    <p class="rotulo">[ EXERCÍCIO · SEU PRIMEIRO PORTFÓLIO ]</p>
+    <h2>O pedido para a IA</h2>
+    <ol>
+      <li>Copie ou baixe o pedido abaixo.</li>
+      <li>Cole numa IA gratuita: ChatGPT, Gemini, Microsoft Copilot ou Claude.</li>
+      <li>Troque <b>tudo o que está entre colchetes</b> pelas suas informações e envie.</li>
+    </ol>
+    <div class="botoes">
+      <button type="button" class="neon" id="copiar">Copiar o pedido</button>
+      <a class="neon vazado" href="prompt.txt" download="pedido-portfolio.txt">Baixar .txt</a>
+    </div>
+    <p id="aviso" role="status" style="min-height:1.5em;color:var(--ciano);font-family:var(--mono)"></p>
+    <pre><code id="pedido">Carregando…</code></pre>
+    <div class="alerta">O portfólio vai ser público: nada de dado de outras pessoas, da empresa do estágio ou senha. Confira tudo antes de publicar.</div>
+    <p><a href="guia.html">Passo a passo completo: do pedido ao site no ar →</a></p>
+  </div>
+</section>
+</main>
+
+<script>
+// O texto vem do prompt.txt: um lugar só para editar o pedido
+(function () {
+  const pedido = document.getElementById("pedido");
+  const aviso = document.getElementById("aviso");
+  fetch("prompt.txt").then((r) => r.text()).then((t) => { pedido.textContent = t; })
+    .catch(() => { pedido.textContent = "Não carregou: use o botão Baixar .txt."; });
+  document.getElementById("copiar").addEventListener("click", () => {
+    navigator.clipboard.writeText(pedido.textContent)
+      .then(() => { aviso.textContent = "Copiado! Agora cole na IA."; })
+      .catch(() => { aviso.textContent = "Não deu para copiar: selecione o texto abaixo e copie."; });
+  });
+})();
+</script>
+</body>
+</html>

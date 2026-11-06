@@ -1,0 +1,19 @@
+Crie uma página de portfólio em um único arquivo index.html, com o CSS dentro do próprio arquivo, sem bibliotecas externas e sem JavaScript. A página deve ficar bonita e funcionar bem no celular. Escreva em português.
+
+Sobre mim
+Nome: [seu nome completo]
+Curso: [seu curso]
+Faculdade: [onde você estuda ou estudou]
+Uma frase sobre mim: [o que você gosta de fazer]
+LinkedIn: [link do seu perfil, ou apague esta linha]
+E-mail profissional: [seu e-mail, ou apague esta linha]
+
+Projeto: [nome do projeto]
+Problema: [qual era o problema e para quem]
+O que eu fiz: [a solução em uma ou duas frases]
+Como eu fiz: [dados, método e ferramentas]
+Resultado: [o que você conseguiu, só números reais]
+
+Coloque no topo o meu nome, o curso e a faculdade. Depois, o projeto em quatro blocos com os títulos Problema, O que eu fiz, Como eu fiz e Resultado. No rodapé, os meus contatos e o link do meu GitHub: https://github.com/[seu-usuario]
+
+Use somente as informações acima: não invente números, empresas, depoimentos, fotos nem links. Não inclua formulários. Responda só com o código completo do arquivo.

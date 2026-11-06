@@ -80,32 +80,27 @@
 
     <h3>2.2 · Peça a página à IA</h3>
     <p>Serve qualquer uma na versão gratuita: <b>ChatGPT</b>, <b>Gemini</b>, <b>Microsoft Copilot</b> ou <b>Claude</b>. Copie o pedido abaixo, troque tudo o que está entre colchetes e envie:</p>
-<pre><code>Crie uma página de portfólio em um único arquivo index.html,
-com o CSS dentro do próprio arquivo, sem bibliotecas externas
-e sem JavaScript. A página deve ficar bonita e funcionar bem
-no celular. Escreva em português.
+<pre><code>Crie uma página de portfólio em um único arquivo index.html, com o CSS dentro do próprio arquivo, sem bibliotecas externas e sem JavaScript. A página deve ficar bonita e funcionar bem no celular. Escreva em português.
 
 Sobre mim
 Nome: [seu nome completo]
 Curso: [seu curso]
 Faculdade: [onde você estuda ou estudou]
 Uma frase sobre mim: [o que você gosta de fazer]
+LinkedIn: [link do seu perfil, ou apague esta linha]
+E-mail profissional: [seu e-mail, ou apague esta linha]
 
 Projeto: [nome do projeto]
 Problema: [qual era o problema e para quem]
 O que eu fiz: [a solução em uma ou duas frases]
-Como: [dados, método e ferramentas]
+Como eu fiz: [dados, método e ferramentas]
 Resultado: [o que você conseguiu, só números reais]
 
-Coloque no topo o meu nome, o curso e a faculdade. Depois,
-o projeto em quatro blocos com os títulos Problema, O que eu
-fiz, Como e Resultado. No rodapé, o link do meu GitHub:
-https://github.com/[seu-usuario]
+Coloque no topo o meu nome, o curso e a faculdade. Depois, o projeto em quatro blocos com os títulos Problema, O que eu fiz, Como eu fiz e Resultado. No rodapé, os meus contatos e o link do meu GitHub: https://github.com/[seu-usuario]
 
-Use somente as informações acima: não invente números,
-empresas, depoimentos, fotos nem links. Não inclua formulários.
-Responda só com o código completo do arquivo.</code></pre>
-    <div class="dica">Tem mais de um projeto? Repita o bloco "Projeto / Problema / O que eu fiz / Como / Resultado" para cada um, antes do parágrafo "Coloque no topo…".</div>
+Use somente as informações acima: não invente números, empresas, depoimentos, fotos nem links. Não inclua formulários. Responda só com o código completo do arquivo.</code></pre>
+    <p><a href="prompt.html">Prefere copiar com um clique ou baixar em .txt? Abra a página do pedido →</a></p>
+    <div class="dica">Tem mais de um projeto? Repita o bloco "Projeto / Problema / O que eu fiz / Como eu fiz / Resultado" para cada um, antes do parágrafo "Coloque no topo…". O e-mail vai ficar público na página: use um e-mail só para contatos profissionais, ou apague a linha.</div>
 
     <h3>2.3 · Salve o arquivo</h3>
     <ol>
@@ -156,7 +151,7 @@ Responda só com o código completo do arquivo.</code></pre>
     <h2>Passo 5 · Ver o site no ar e entregar</h2>
     <p class="intro">Como o repositório tem o nome <code>SEU-USUARIO.github.io</code>, o GitHub Pages publica o <code>index.html</code> sozinho. Não precisa configurar nada.</p>
     <ol>
-      <li>Espere de 1 a 5 minutos depois do commit.</li>
+      <li>Espere de 1 a 5 minutos depois do commit (na primeira vez, até 10). O andamento aparece na aba <b>Actions</b> do repositório.</li>
       <li>Abra <code>https://SEU-USUARIO.github.io</code> no navegador. Se ainda não abrir, espere mais um pouco e recarregue.</li>
       <li>Para conferir: no repositório, <b>Settings</b> (engrenagem, no topo) → <b>Pages</b> (menu da esquerda). Quando estiver pronto, aparece <i>"Your site is live at…"</i> com o link.</li>
       <li>Abra o link também no celular, para ver se ficou bom.</li>
@@ -178,7 +173,7 @@ Responda só com o código completo do arquivo.</code></pre>
     <p class="intro">Clique no problema para ver a solução.</p>
     <details>
       <summary>O site abre com "404 There isn't a GitHub Pages site here"</summary>
-      <p>Confira, nesta ordem: o repositório se chama exatamente <code>SEU-USUARIO.github.io</code>, com o seu usuário; o repositório é público; o arquivo se chama exatamente <code>index.html</code>, em minúsculas; e ele está solto no repositório, não dentro de uma pasta. Se tudo estiver certo, espere uns minutos: a primeira publicação pode demorar.</p>
+      <p>Confira, nesta ordem: o repositório se chama exatamente <code>SEU-USUARIO.github.io</code>, com o seu usuário; o repositório é público; o arquivo se chama exatamente <code>index.html</code>, em minúsculas; e ele está solto no repositório, não dentro de uma pasta. Se tudo estiver certo, é só esperar: normalmente leva de 1 a 5 minutos, e a primeira publicação da conta pode chegar a 10. Para acompanhar, abra a aba <b>Actions</b> do repositório: bolinha amarela é "publicando", verde é "pronto" e vermelha é erro. Não suba o arquivo de novo enquanto espera, porque isso reinicia a publicação.</p>
     </details>
     <details>
       <summary>O site mostra o texto do README em vez da minha página</summary>
