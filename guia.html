@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia do GitHub · Jader Zerbini</title>
+<meta name="description" content="Passo a passo para criar o seu primeiro portfólio com uma IA gratuita e publicá-lo no GitHub Pages, tudo pelo navegador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fundo" aria-hidden="true">
+  <video autoplay muted loop playsinline poster="videos/fundo.jpg" src="videos/fundo.webm"></video>
+</div>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="topo">
+  <div class="conteudo">
+    <a class="marca" href="index.html">JADER<span>://</span>ZERBINI</a>
+    <nav aria-label="Passos do guia">
+      <a href="#conta">1. Conta</a>
+      <a href="#pagina">2. Página</a>
+      <a href="#conferir">3. Conferir</a>
+      <a href="#repositorio">4. Repositório</a>
+      <a href="#site">5. Site</a>
+      <a href="#problemas">Problemas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="guia">
+
+<div class="abertura">
+  <div class="conteudo">
+    <p class="rotulo">[ GUIA PASSO A PASSO ]</p>
+    <h1 class="glitch" data-texto="Do zero ao GitHub">Do zero ao GitHub</h1>
+    <p class="hud" style="margin-top:22px;max-width:680px">Seu primeiro portfólio no ar, sem instalar nada e sem saber programar: uma IA gratuita escreve a página, você conta a história e publica tudo pelo site do GitHub. Siga na ordem. Tempo total: de 30 a 45 minutos.</p>
+  </div>
+</div>
+
+<section>
+  <div class="conteudo">
+    <h2>O que você vai precisar</h2>
+    <ul>
+      <li>Um computador com navegador (Chrome ou Edge) e o Bloco de Notas.</li>
+      <li>Um e-mail, de preferência o da faculdade, para pedir os benefícios de estudante.</li>
+      <li>Um projeto que você fez na faculdade: uma análise, um painel, um modelo, um trabalho de disciplina, o TCC.</li>
+    </ul>
+    <div class="alerta"><b>O portfólio vai ser público:</b> qualquer pessoa na internet vai poder ver a página e o arquivo dela. Nada de dado pessoal de outras pessoas, dado de empresa ou senha. O passo 3 mostra o que conferir.</div>
+  </div>
+</section>
+
+<section id="conta" class="alt">
+  <div class="conteudo">
+    <h2>Passo 1 · Criar a conta no GitHub</h2>
+    <ol>
+      <li>Abra <a href="https://github.com/signup">github.com/signup</a>, informe e-mail e senha.</li>
+      <li>Escolha um <b>nome de usuário profissional</b>, porque ele vira o endereço do seu site: o usuário <code>mariasilva</code> terá o site <code>mariasilva.github.io</code>. Evite apelidos e números aleatórios.</li>
+      <li>Confirme o e-mail e ative a <b>verificação em duas etapas</b> quando o GitHub pedir (um app autenticador no celular resolve).</li>
+      <li>No perfil (sua foto → <b>Your profile</b> → <b>Edit profile</b>): coloque foto, nome completo e uma bio de uma linha, por exemplo "Estudante de Ciência de Dados · Python, SQL e visualização".</li>
+      <li>Opcional: com o e-mail da faculdade, peça o <a href="https://education.github.com/pack">GitHub Student Developer Pack</a>, com ferramentas pagas de graça enquanto você estuda.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="pagina">
+  <div class="conteudo">
+    <h2>Passo 2 · Criar a página com uma IA gratuita</h2>
+    <p class="intro">O portfólio é uma página só, um arquivo chamado <code>index.html</code>. Você não precisa escrever o código: a IA escreve, a história é sua.</p>
+
+    <h3>2.1 · Responda as perguntas sobre o seu projeto</h3>
+    <p>Todo projeto do portfólio é contado em quatro partes. Escreva com as suas palavras:</p>
+    <ul>
+      <li><b>Problema:</b> quem tinha qual dificuldade, e por que isso importa?</li>
+      <li><b>O que eu fiz:</b> a solução, em uma ou duas frases que qualquer pessoa entenda.</li>
+      <li><b>Como:</b> os dados, o método e as ferramentas (Python, Pandas, Excel, Power BI...).</li>
+      <li><b>Resultado:</b> o que você conseguiu. Só números que você tem de verdade.</li>
+    </ul>
+
+    <h3>2.2 · Peça a página à IA</h3>
+    <p>Serve qualquer uma na versão gratuita: <b>ChatGPT</b>, <b>Gemini</b>, <b>Microsoft Copilot</b> ou <b>Claude</b>. Copie o pedido abaixo, troque tudo o que está entre colchetes e envie:</p>
+<pre><code>Crie uma página de portfólio em um único arquivo index.html,
+com o CSS dentro do próprio arquivo, sem bibliotecas externas
+e sem JavaScript. A página deve ficar bonita e funcionar bem
+no celular. Escreva em português.
+
+Sobre mim
+Nome: [seu nome completo]
+Curso: [seu curso]
+Faculdade: [onde você estuda ou estudou]
+Uma frase sobre mim: [o que você gosta de fazer]
+
+Projeto: [nome do projeto]
+Problema: [qual era o problema e para quem]
+O que eu fiz: [a solução em uma ou duas frases]
+Como: [dados, método e ferramentas]
+Resultado: [o que você conseguiu, só números reais]
+
+Coloque no topo o meu nome, o curso e a faculdade. Depois,
+o projeto em quatro blocos com os títulos Problema, O que eu
+fiz, Como e Resultado. No rodapé, o link do meu GitHub:
+https://github.com/[seu-usuario]
+
+Use somente as informações acima: não invente números,
+empresas, depoimentos, fotos nem links. Não inclua formulários.
+Responda só com o código completo do arquivo.</code></pre>
+    <div class="dica">Tem mais de um projeto? Repita o bloco "Projeto / Problema / O que eu fiz / Como / Resultado" para cada um, antes do parágrafo "Coloque no topo…".</div>
+
+    <h3>2.3 · Salve o arquivo</h3>
+    <ol>
+      <li>Copie todo o código que a IA devolveu (muitas mostram um botão <b>Copiar</b> no canto do código).</li>
+      <li>Abra o <b>Bloco de Notas</b>, cole e vá em <b>Arquivo → Salvar como</b>.</li>
+      <li>Em <b>Tipo</b>, escolha <b>Todos os arquivos (*.*)</b>. Em <b>Nome</b>, escreva <code>index.html</code>, tudo em minúsculas. Em <b>Codificação</b>, escolha <b>UTF-8</b>. Salve.</li>
+      <li>Dê dois cliques no arquivo salvo: a página abre no navegador. É assim que ela vai ficar na internet.</li>
+    </ol>
+    <div class="dica">Não gostou de algo? Peça à própria IA, na mesma conversa: "deixe as cores mais sóbrias", "aumente a fonte", "troque a ordem dos blocos". Depois, salve o código novo por cima do arquivo antigo.</div>
+  </div>
+</section>
+
+<section id="conferir" class="alt">
+  <div class="conteudo">
+    <h2>Passo 3 · Conferir antes de publicar</h2>
+    <p class="intro">Abra a página no navegador e leia tudo. Ela só pode ir para o GitHub se todas as respostas forem "sim":</p>
+    <ul class="checklist">
+      <li>Nenhum nome, CPF, RA, telefone ou e-mail de outra pessoa (colegas, professores, pacientes, clientes)?</li>
+      <li>Nenhum dado da empresa do estágio ou do trabalho (clientes, valores, planilhas, prints de sistema interno)?</li>
+      <li>Nenhuma senha, chave de API ou link privado?</li>
+      <li>Se tiver gráfico ou tabela, os dados são públicos, inventados ou anonimizados?</li>
+      <li>Todo número e toda frase sobre você é verdade? A IA às vezes inventa: apague o que você não disse.</li>
+    </ul>
+    <div class="alerta">Na dúvida, não publique. Depois que a página está no ar, qualquer pessoa pode copiá-la, e o histórico do GitHub guarda até o que você apagar depois.</div>
+  </div>
+</section>
+
+<section id="repositorio">
+  <div class="conteudo">
+    <h2>Passo 4 · Criar o repositório e subir a página</h2>
+    <p class="intro">Repositório é a pasta do projeto no GitHub, com o histórico de todas as versões. O do portfólio tem um nome especial, e é esse nome que faz o site aparecer.</p>
+    <ol>
+      <li>No GitHub, no canto superior direito, clique em <b>+</b> → <b>New repository</b>.</li>
+      <li>Em <b>Repository name</b>, escreva exatamente <code>SEU-USUARIO.github.io</code>, trocando SEU-USUARIO pelo seu nome de usuário. Ex.: <code>mariasilva.github.io</code>.</li>
+      <li>Em <b>Description</b>, uma frase: "Meu portfólio".</li>
+      <li>Deixe marcado <b>Public</b>. O site grátis só funciona com repositório público.</li>
+      <li>Marque <b>Add a README file</b> e clique em <b>Create repository</b>.</li>
+      <li>Na página do repositório, acima da lista de arquivos, clique em <b>Add file</b> → <b>Upload files</b>.</li>
+      <li>Arraste <b>só o arquivo</b> <code>index.html</code> para a página (o arquivo, e não a pasta onde ele está).</li>
+      <li>Embaixo, em <b>Commit changes</b>, escreva na primeira caixa o que você está enviando, por exemplo <i>Primeira versão do portfólio</i>, e clique no botão verde <b>Commit changes</b>.</li>
+    </ol>
+    <div class="dica">"Commit" é o registro de uma mudança, com a mensagem que você escreveu. Cada vez que você subir uma versão nova do <code>index.html</code> (repetindo os passos 6 a 8), o GitHub guarda a anterior no histórico.</div>
+  </div>
+</section>
+
+<section id="site" class="alt">
+  <div class="conteudo">
+    <h2>Passo 5 · Ver o site no ar e entregar</h2>
+    <p class="intro">Como o repositório tem o nome <code>SEU-USUARIO.github.io</code>, o GitHub Pages publica o <code>index.html</code> sozinho. Não precisa configurar nada.</p>
+    <ol>
+      <li>Espere de 1 a 5 minutos depois do commit.</li>
+      <li>Abra <code>https://SEU-USUARIO.github.io</code> no navegador. Se ainda não abrir, espere mais um pouco e recarregue.</li>
+      <li>Para conferir: no repositório, <b>Settings</b> (engrenagem, no topo) → <b>Pages</b> (menu da esquerda). Quando estiver pronto, aparece <i>"Your site is live at…"</i> com o link.</li>
+      <li>Abra o link também no celular, para ver se ficou bom.</li>
+      <li>Entregue ao professor os dois links: o do site (<code>https://SEU-USUARIO.github.io</code>) e o do repositório (<code>https://github.com/SEU-USUARIO/SEU-USUARIO.github.io</code>).</li>
+    </ol>
+    <div class="dica">Mudou o arquivo? Suba o <code>index.html</code> novo pelo mesmo caminho (<b>Add file → Upload files</b>): ele substitui o antigo e o site se atualiza sozinho em alguns minutos.</div>
+    <h3>Para depois do exercício</h3>
+    <ul>
+      <li>Coloque o link do site e do GitHub no LinkedIn, na seção <b>Destaques</b>.</li>
+      <li>Fixe seus melhores repositórios no perfil: <b>Customize your pins</b>.</li>
+      <li>Quando tiver mais projetos, peça à IA para acrescentá-los à mesma página.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="problemas">
+  <div class="conteudo">
+    <h2>Deu erro? Os mais comuns</h2>
+    <p class="intro">Clique no problema para ver a solução.</p>
+    <details>
+      <summary>O site abre com "404 There isn't a GitHub Pages site here"</summary>
+      <p>Confira, nesta ordem: o repositório se chama exatamente <code>SEU-USUARIO.github.io</code>, com o seu usuário; o repositório é público; o arquivo se chama exatamente <code>index.html</code>, em minúsculas; e ele está solto no repositório, não dentro de uma pasta. Se tudo estiver certo, espere uns minutos: a primeira publicação pode demorar.</p>
+    </details>
+    <details>
+      <summary>O site mostra o texto do README em vez da minha página</summary>
+      <p>O GitHub não encontrou o <code>index.html</code>. Veja se o arquivo subiu mesmo (ele aparece na lista de arquivos do repositório) e se o nome está certo: <code>Index.html</code>, <code>index.html.txt</code> ou <code>portfolio.html</code> não funcionam.</p>
+    </details>
+    <details>
+      <summary>O arquivo salvou como "index.html.txt"</summary>
+      <p>O Bloco de Notas colocou <code>.txt</code> no fim. Salve de novo escolhendo <b>Tipo: Todos os arquivos (*.*)</b>. Para ver a extensão dos arquivos no Windows: no Explorador de Arquivos, <b>Exibir → Mostrar → Extensões de nomes de arquivos</b>.</p>
+    </details>
+    <details>
+      <summary>A página aparece com letras estranhas no lugar dos acentos (Ã©, Ã§)</summary>
+      <p>O arquivo foi salvo sem UTF-8. Salve de novo pelo Bloco de Notas com <b>Codificação: UTF-8</b>. Se continuar, peça à IA para incluir <code>&lt;meta charset="utf-8"&gt;</code> no começo do arquivo.</p>
+    </details>
+    <details>
+      <summary>A página aparece toda sem cor, só texto</summary>
+      <p>A IA provavelmente separou o CSS num segundo arquivo. Peça de novo: "coloque todo o CSS dentro do index.html, numa tag style".</p>
+    </details>
+    <details>
+      <summary>Errei o nome do repositório</summary>
+      <p>O nome precisa ser igual ao seu usuário, letra por letra. Se você errou o usuário, o repositório até é criado, mas o site não aparece. Para renomear: <b>Settings</b> → <b>General</b> → <b>Repository name</b>.</p>
+    </details>
+    <details>
+      <summary>Publiquei uma informação que não devia</summary>
+      <p>Apague a informação do <code>index.html</code> e suba o arquivo de novo. Como o histórico guarda a versão antiga, o mais seguro é apagar o repositório (<b>Settings</b> → <b>General</b> → lá embaixo, <b>Delete this repository</b>) e criá-lo de novo com o arquivo corrigido. Se era uma senha, troque-a na hora.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="conteudo">
+    <p><a href="index.html">← Voltar ao portfólio</a> · Guia feito por Jader Zerbini para a palestra "Do zero ao GitHub".</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

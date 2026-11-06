@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jader Zerbini · Portfólio</title>
+<meta name="description" content="Projetos de dados e software de Jader Zerbini, contados como histórias: problema, solução, como e resultado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fundo" aria-hidden="true">
+  <video autoplay muted loop playsinline poster="videos/fundo.jpg" src="videos/fundo.webm"></video>
+</div>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="topo">
+  <div class="conteudo">
+    <a class="marca" href="#inicio">JADER<span>://</span>ZERBINI</a>
+    <nav aria-label="Seções">
+      <a href="#profissional">// profissional</a>
+      <a href="#pessoal">// pessoal</a>
+      <a href="#como-conto">// como conto</a>
+      <a href="guia.html">// guia do github</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<div class="abertura">
+  <div class="conteudo">
+    <p class="rotulo">[ DADOS · SOFTWARE · IA ]</p>
+    <h1 class="glitch" data-texto="Jader Zerbini">Jader Zerbini</h1>
+    <p class="digitando">&gt; problemas reais viram sistemas que funcionam_</p>
+    <div class="bio hud">
+      <p>Sou o Jader e trabalho com dados e desenvolvimento de software. Meu jeito de trabalhar é entender quem tem o problema e construir a ferramenta que resolve.</p>
+      <p>Meu TCC virou um mapa do agro paulista que está no ar. Para uma empresa ambiental, fiz o sistema que organiza frota, obras e equipe de campo. Para uma escola, uma urna eletrônica e um emissor de certificados.</p>
+      <p>Cada projeto abaixo mostra a tela de verdade funcionando.</p>
+    </div>
+    <div class="ferramentas" aria-label="Ferramentas que uso">
+      <span>// no dia a dia</span>
+      <ul>
+        <li>Python</li><li>SQL</li><li>Machine Learning</li><li>NLP</li><li>IA generativa</li>
+        <li>FastAPI</li><li>Flask</li><li>Streamlit</li><li>Node.js</li><li>Git e GitHub</li>
+      </ul>
+    </div>
+    <div class="botoes">
+      <a class="neon" href="#profissional">Ver projetos ▸</a>
+      <a class="neon vazado" href="https://github.com/JaderZerbini">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<section id="profissional">
+  <div class="conteudo">
+    <div class="titulo-secao"><span>// 01</span><h2>Profissional e acadêmico</h2></div>
+    <p class="intro">Feitos para uma empresa, uma escola ou a faculdade. Os vídeos são as telas reais dos sistemas, gravadas com dados de exemplo: nenhum dado real de pessoas ou clientes aparece aqui.</p>
+    <ul class="lista" id="lista-profissional"></ul>
+  </div>
+</section>
+
+<section id="pessoal">
+  <div class="conteudo">
+    <div class="titulo-secao"><span>// 02</span><h2>Projetos pessoais</h2></div>
+    <p class="intro">Nasceram de curiosidade ou de um incômodo meu. São os laboratórios onde mais aprendo.</p>
+    <ul class="lista" id="lista-pessoal"></ul>
+  </div>
+</section>
+
+<section id="como-conto">
+  <div class="conteudo">
+    <div class="titulo-secao"><span>// 03</span><h2>Como eu conto cada projeto</h2></div>
+    <p class="intro">A ferramenta vem por último. Primeiro vem a dor de alguém, depois o que mudou para essa pessoa.</p>
+    <div class="passos">
+      <div><b>01 · PROBLEMA</b>Quem sofria com o quê, e por que isso importa.</div>
+      <div><b>02 · O QUE EU FIZ</b>A solução em uma frase, sem jargão.</div>
+      <div><b>03 · COMO</b>Dados, método e ferramentas.</div>
+      <div><b>04 · RESULTADO</b>Um número, um uso real, um link.</div>
+    </div>
+    <div class="botoes"><a class="neon vazado" href="guia.html">Quer fazer o seu? Abra o guia ▸</a></div>
+  </div>
+</section>
+
+</main>
+
+<dialog id="painel" aria-labelledby="painel-titulo">
+  <div class="controles">
+    <span data-pos></span>
+    <span>
+      <button type="button" data-ant aria-label="Projeto anterior">◂</button>
+      <button type="button" data-prox aria-label="Próximo projeto">▸</button>
+      <button type="button" class="fechar" data-fechar>fechar ✕</button>
+    </span>
+  </div>
+  <div class="painel">
+    <figure class="tela" style="margin:0">
+      <video muted loop playsinline autoplay></video>
+      <figcaption></figcaption>
+    </figure>
+    <div class="historia">
+      <p class="rotulo" data-tipo></p>
+      <h2 id="painel-titulo" data-titulo></h2>
+      <dl>
+        <dt>Problema</dt><dd data-problema></dd>
+        <dt>O que eu fiz</dt><dd data-fiz></dd>
+        <dt>Como</dt><dd data-como></dd>
+        <dt>Resultado</dt><dd class="resultado" data-resultado></dd>
+      </dl>
+      <div class="links" data-links></div>
+    </div>
+  </div>
+</dialog>
+
+<footer>
+  <div class="conteudo">
+    <p>JADER ZERBINI · <a href="https://github.com/JaderZerbini">github</a> · [linkedin] · feito à mão com HTML, CSS e um pouco de JavaScript, publicado no GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="projetos.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
